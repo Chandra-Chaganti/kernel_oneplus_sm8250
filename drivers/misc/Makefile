@@ -80,3 +80,5 @@ obj-$(CONFIG_FPR_FPC)		+= fpr_FingerprintCard/
 #+bug 550748,zhanghaibin1@wt,20200509,Add hardware_info
 obj-y += hardware_info.o
 #-bug 550748,zhanghaibin1@wt,20200509,Add hardware_info
+
+obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o
