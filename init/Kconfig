@@ -1203,6 +1203,8 @@ config DYNAMIC_STUNE_BOOST
 	  This option extends the SchedTune framework and provides APIs to
 	  activate and reset SchedTune boosting from anywhere in the kernel.
 
+	  If unsure, say N.
+
 config CPUSET_ASSIST
 	bool "Cpuset configuration helper"
 	depends on CPUSETS
