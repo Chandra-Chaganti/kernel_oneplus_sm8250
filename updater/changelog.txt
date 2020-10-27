@@ -1,0 +1,16 @@
+Project name: Radioactive_kernel_oneplus8/8Pro-V2.0.7
+  * update build version (acuicultor)
+  * kbuild: use LLVM integrated assembler for C files (Stefan Agner) [806f8f34015b]
+  * block,cfq: Set cfq_back_penalty to 1 (celtare21) [dfa6148d699e]
+  * drivers/input: fix code errors caught by clang12 (acuicultor) [3e272d556e3d]
+  * defconfig: Disable serial console logging. (ZVNexus) [8ac78eeed7b7]
+  * s6sy761: fix memory leak from sec_ts_run_rawdata_all() (Park Ju Hyung) [11e2514330d0]
+  * s6sy761: use GFP_DMA memory for touch_i2c_read_block() (Park Ju Hyung) [7c834bb04269]
+  * touchscreen: use GFP_DMA memory for touch_i2c_read_block() (Park Ju Hyung) [27789b4fe562]
+  * touchscreen: add a few bp hints (Park Ju Hyung) [8955abfea9bc]
+  * touchscreen: avoid dynamic memory allocations (Park Ju Hyung) [26d14d5bdba8]
+  * touchscreen: avoid unnecessary heap allocations (Park Ju Hyung) [8d37b8f22506]
+  * s6sy761: avoid unnecessary heap allocations (Park Ju Hyung) [a6a125a62d9e]
+  * cpuidle: lpm-levels: Allow exit latencies equal to target latencies (Sultan Alsawaf) [28aee56c245e]
+  * msm_performance: simplify touchboost check and process (engstk) [073cc67b48bb]
+  * Synchronize codes for OnePlus 8T Oxygen OS 11.0.1.2.KB05AA and OnePlus 8 Oxygen OS 11.0.1.1.IN21AA and OnePlus 8 Pro Oxygen OS 11.0.1.1.IN11AA
