@@ -446,7 +446,7 @@ KBUILD_LDFLAGS :=
 GCC_PLUGINS_CFLAGS :=
 CLANG_FLAGS :=
 
-ifeq ($(filter instantnoodle%, $(OEM_TARGET_PRODUCT)),)
+ifeq ($(filter instantnoodle%, $(TARGET_DEVICE)),)
 KBUILD_CFLAGS += -DUFS3V1
 else
 KBUILD_CFLAGS += -DUFS3V0

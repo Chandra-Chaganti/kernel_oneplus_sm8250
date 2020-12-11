@@ -14,7 +14,7 @@ obj-$(CONFIG_SCSI_UFS_HISI) += ufs-hisi.o
 ufshcd-core-$(CONFIG_SCSI_UFS_CRYPTO) += ufshcd-crypto.o
 ufshcd-core-$(CONFIG_SCSI_UFS_CRYPTO_QTI) += ufshcd-crypto-qti.o
 # filter instantnoodle, instantnoodlep ...
-ifeq ($(filter instantnoodle%, $(OEM_TARGET_PRODUCT)),)
+ifeq ($(filter instantnoodle%, $(TARGET_DEVICE)),)
 obj-$(CONFIG_UFSFEATURE) += ufs31/ufsfeature.o
 obj-$(CONFIG_UFSHPB) += ufs31/ufshpb.o
 obj-$(CONFIG_UFSTW) += ufs31/ufstw.o

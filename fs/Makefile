@@ -134,7 +134,7 @@ obj-$(CONFIG_PSTORE)		+= pstore/
 obj-$(CONFIG_EFIVAR_FS)		+= efivarfs/
 obj-$(CONFIG_EXFAT_FS)		+= exfat/
 # filter instantnoodle, instantnoodlep ...
-ifeq ($(filter instantnoodle%, $(OEM_TARGET_PRODUCT)),)
+ifeq ($(filter instantnoodle%, $(TARGET_DEVICE)),)
 KBUILD_CFLAGS += -DUFS3V1
 else
 KBUILD_CFLAGS += -DUFS3V0
