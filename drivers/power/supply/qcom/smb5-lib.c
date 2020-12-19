@@ -11542,7 +11542,7 @@ static int msm_drm_notifier_callback(struct notifier_block *self,
 				set_property_on_fg(chip,
 				POWER_SUPPLY_PROP_UPDATE_LCD_IS_OFF, 0);
 			chip->oem_lcd_is_on = true;
-			chip->lcd_st_debounce_expire = jiffies + 60 * HZ; // 1min
+			chip->lcd_st_debounce_expire = jiffies + 60 * 250; // 1min
 			op_dcdc_vph_track_sel(chip);
 		} else if (*blank == DRM_PANEL_BLANK_POWERDOWN ||
 				*blank == DRM_PANEL_BLANK_POWERDOWN_CHARGE) {
@@ -11550,7 +11550,7 @@ static int msm_drm_notifier_callback(struct notifier_block *self,
 				set_property_on_fg(chip,
 				POWER_SUPPLY_PROP_UPDATE_LCD_IS_OFF, 1);
 			chip->oem_lcd_is_on = false;
-			chip->lcd_st_debounce_expire = jiffies + 60 * HZ; // 1min
+			chip->lcd_st_debounce_expire = jiffies + 60 * 250; // 1min
 			op_dcdc_vph_track_sel(chip);
 		}
 #ifdef OP_SWARP_SUPPORTED
