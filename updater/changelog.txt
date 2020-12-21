@@ -1,16 +1,17 @@
-Project name: Radioactive_kernel_oneplus8/8Pro-V2.0.7
-  * update build version (acuicultor)
-  * kbuild: use LLVM integrated assembler for C files (Stefan Agner) [806f8f34015b]
-  * block,cfq: Set cfq_back_penalty to 1 (celtare21) [dfa6148d699e]
-  * drivers/input: fix code errors caught by clang12 (acuicultor) [3e272d556e3d]
-  * defconfig: Disable serial console logging. (ZVNexus) [8ac78eeed7b7]
-  * s6sy761: fix memory leak from sec_ts_run_rawdata_all() (Park Ju Hyung) [11e2514330d0]
-  * s6sy761: use GFP_DMA memory for touch_i2c_read_block() (Park Ju Hyung) [7c834bb04269]
-  * touchscreen: use GFP_DMA memory for touch_i2c_read_block() (Park Ju Hyung) [27789b4fe562]
-  * touchscreen: add a few bp hints (Park Ju Hyung) [8955abfea9bc]
-  * touchscreen: avoid dynamic memory allocations (Park Ju Hyung) [26d14d5bdba8]
-  * touchscreen: avoid unnecessary heap allocations (Park Ju Hyung) [8d37b8f22506]
-  * s6sy761: avoid unnecessary heap allocations (Park Ju Hyung) [a6a125a62d9e]
-  * cpuidle: lpm-levels: Allow exit latencies equal to target latencies (Sultan Alsawaf) [28aee56c245e]
-  * msm_performance: simplify touchboost check and process (engstk) [073cc67b48bb]
-  * Synchronize codes for OnePlus 8T Oxygen OS 11.0.1.2.KB05AA and OnePlus 8 Oxygen OS 11.0.1.1.IN21AA and OnePlus 8 Pro Oxygen OS 11.0.1.1.IN11AA
+Project name: Radioactive_kernel_oneplus8/8Pro-V2.1.1
+  * update build version (acuicultor) 
+  * Revert "cpufreq: schedutil: Hard-code rate-limit thresholds" (acuicultor) [6d65378cbdd3]
+  * Revert "cpufreq: schedutil: Relax schedutil up/down rate limit thresholds" (acuicultor) [3c40d4902e61]
+  * Revert "block: Do not collect I/O statistics" (acuicultor) [c912062ab96f]
+  * Revert "fs: default to noatime" (acuicultor) [2598aec74d1f]
+  * Revert "block: set slice_idle to 0 on cfq" (acuicultor) [c0d9c5e8657b]
+  * scsi: ufs: Only apply pm_qos to the CPU servicing UFS interrupts (Sultan Alsawaf) [5715834dffe6]
+  * defconfig regenerate (acuicultor) [a028d0505589]
+  * KLAPSE: Switch DEFINE_TIMER callbacks to struct timer_list * (flar2) [d547e4d7ecae]
+  * KLAPSE : Revise dimmer auto switch documentation (Tanish Manku) [47b348414f68]
+  * KLAPSE : Use appropriate callback for data types (Tanish Manku) [2dd582c74f81]
+  * KLAPSE : Fix prototype warn (Tanish Manku) [091f5ec238b8]
+  * KLAPSE : Make default flow_freq value configurable at compile time from klapse.h (Tanish Manku) [ad208ccdb0bf]
+  * Drivers: Introduce K-lapse v5.0 (Tanish Manku) [953c7f720988]
+  * Revert "msm_performance: simplify touchboost check and process" (acuicultor) [a565aa9ea087]
+  * Revert "block,cfq: Set cfq_back_penalty to 1" (acuicultor) [4725ac258b1a]
