@@ -20,9 +20,9 @@ static unsigned short kcal_green = 256;
 static unsigned short kcal_blue = 256;
 #endif
 static unsigned short kcal_hue = 0;
-static unsigned short kcal_sat = 255;
+static unsigned short kcal_sat = 268;
 static unsigned short kcal_val = 255;
-static unsigned short kcal_cont = 255;
+static unsigned short kcal_cont = 257;
 
 module_param(kcal_red, short, 0644);
 module_param(kcal_green, short, 0644);
