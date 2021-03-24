@@ -713,6 +713,9 @@ ifeq ($(CONFIG_LITHIUM), y)
 	CONFIG_FEATURE_UNIT_TEST_SUSPEND := y
 endif
 
+#Flag to enable RX DESC DEBUG CHECK
+CONFIG_RX_DESC_DEBUG_CHECK:= y
+
 #Flag to enable hdd memory dump feature
 CONFIG_FEATURE_MEMDUMP_ENABLE := n
 
